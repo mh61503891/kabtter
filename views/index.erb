@@ -1,0 +1,53 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"> 
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link type="text/css" rel="stylesheet" media="screen" href="css/jquery.uniform.theme.default.css" />
+    <link type="text/css" rel="stylesheet" media="screen" href="css/jquery.noty.css"/>
+    <link type="text/css" rel="stylesheet" media="screen" href="css/jquery.noty.theme.default.css"/>
+    <link type="text/css" rel="stylesheet" media="screen" href="css/chat-server.css"  />
+    <script type="text/javascript" src="jquery-1.7.2.min.js"></script>
+    <script type="text/javascript" src="jquery.tmpl.min.js" ></script>
+    <script type="text/javascript" src="jquery.uniform.min.js"></script>
+    <script type="text/javascript" src="jquery.noty.js"></script>
+    <script type="text/javascript" src="chat-server.js"></script>
+    <script type="text/x-jquery-tmpl" id="message-tmpl">
+      <div class="message">
+	<div class="message-header">
+	  <span class="message-header-content">
+	    <span class="name">${name}</span>
+	    <span class="created_at">${created_at}</span>
+	  </span>
+	</div>
+	<div class="message-body">
+	  <span class="message-body-content">
+	    <span class="text">${text}</span>
+	    <span class="id">#${id}</span>
+	  </span>
+	</div>
+	<div class="message-footer">
+	  <span class="message-footer-content">
+	  </span>
+	</div>
+      </div>
+    </script>
+    <title>KABTTER: WebSocket Chat</title>
+  </head>
+  <body>
+    <div id="body">
+      <h1 id="title">KABTTER</h1>
+      <div id="message-form">
+	<label for="message-form-name">名前</label>
+	<input type="text" id="message-form-name"/>
+	<label for="message-form-text">内容</label>
+	<input type="text" id="message-form-text" />
+	<input type="button" id="message-form-button" value="POST" />
+      </div>
+      <div id="messages">
+      </div>
+      <div id="messages-loading-bar">
+	<span>続きを読む</span>
+      </div>
+    </div>
+  </body>
+</html>

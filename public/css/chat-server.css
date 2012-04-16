@@ -1,0 +1,79 @@
+body {
+    text-align: center;
+    padding: 1em;
+    background-color: #203040;
+    font-family: 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', sans-serif;
+}
+
+div#body {
+    margin: 0 auto;
+    padding: 1em;
+    width: 30em;
+    background-color: #4f6a77;
+}
+
+h1#title {
+    margin: 0 auto;
+    padding: 1em;
+    background-color: 012a3d;
+    color: #eeeeee;
+}
+
+div#message-form {
+    text-align: center;
+    padding: 0.5em;
+    font-size: small;
+    border-top: 1px solid #cccccc;
+    border-left: 1px solid #cccccc;
+    border-right: 1px solid #cccccc;
+    background-color: #eeeeee;
+}
+
+input#message-form-text {
+    width: 40%;
+}
+
+div.message {
+    padding: 0.5em;
+    text-align: left;
+    border-top: 1px solid #cccccc;
+    border-left: 1px solid #cccccc;
+    border-right: 1px solid #cccccc;
+    background-color: #f9f9f9;
+}
+
+div.message-body{
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+}
+
+div.message span.name {
+    font-weight: bold;
+}
+
+span.message-body-content {
+    vertical-align: bottom;
+}
+
+div.message span.id {
+    vertical-align: bottom;
+    text-align: right;
+    float: right;
+    font-size: small;
+    color: #444444;
+}
+
+div.message span.created_at {
+    text-align: right;
+    float: right;
+    color: #444444;
+    font-size: small;
+}
+
+div#messages-loading-bar {
+    border: 1px solid #cccccc;
+    padding: 0.5em;
+    text-align: center;
+    font-size: small;
+    background-color: #f0f0f0;
+}
